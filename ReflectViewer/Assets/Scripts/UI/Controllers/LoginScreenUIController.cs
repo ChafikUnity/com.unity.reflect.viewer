@@ -185,6 +185,9 @@ namespace Unity.Reflect.Viewer.UI
                 case RegionUtils.Provider.Tencent:
                     regionOption = RegionOption.China;
                     break;
+                case RegionUtils.Provider.GCPUK:
+                    regionOption = RegionOption.UK;
+                    break;
             }
 
             OptionItemButton selectedButton = null;
@@ -377,6 +380,10 @@ namespace Unity.Reflect.Viewer.UI
             else if (regionOption == RegionOption.Default)
             {
                 SetRegionOption(RegionUtils.Provider.GCP);
+            }
+            else if (regionOption == RegionOption.UK)
+            {
+                SetRegionOption(RegionUtils.Provider.GCPUK);
             }
         }
 

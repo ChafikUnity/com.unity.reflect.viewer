@@ -10,6 +10,7 @@ namespace Unity.Reflect.Viewer.UI
         None,
         Default,
         China,
+        UK
     }
 
     public enum CloudOption
